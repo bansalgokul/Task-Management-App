@@ -1,0 +1,37 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.list-view-enter {
+	opacity: 0;
+}
+
+.list-view-enter-active {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+
+.list-view-exit {
+	opacity: 1;
+}
+
+.list-view-exit-active {
+	opacity: 0;
+	transition: opacity 300ms;
+}
